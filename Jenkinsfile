@@ -13,18 +13,6 @@ pipeline {
         git url: 'https://github.com/sjh4616/spring-petclinic.git', branch: 'main'
       }
     }
-    stage('Maven Build') {
-
-    }
-    stage ('Docker Image') {
-
-    }
-    stage ('Docker Image Push') {
-
-    }
-    stage ('SSH Publish') {
-
-    }
 
     
   }  
