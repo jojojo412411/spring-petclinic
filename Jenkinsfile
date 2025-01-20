@@ -49,7 +49,7 @@ pipeline {
       steps {
         sh """
         echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin
-        docker push akstn519/spring-petclinic:latest
+        docker push jo418418/spring-petclinic:latest
         """
       }
     }
@@ -58,8 +58,8 @@ pipeline {
     stage('Remove Docker Image') {
       steps {
         sh """
-        docker rmi akstn519/spring-petclinic:$BUILD_NUMBER
-        docker rmi akstn519/spring-petclinic:latest
+        docker rmi jo418418/spring-petclinic:$BUILD_NUMBER
+        docker rmi jo418418/spring-petclinic:latest
         """
       }
     }
