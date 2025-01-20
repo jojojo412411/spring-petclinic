@@ -5,7 +5,7 @@ pipeline {
     jdk 'JDK17'
     maven 'M3'
   }
-
+/*
   // Docker Hub 접속 정보
   environment {
     //DOCKERHUB_CREDENTIALS = credentials('dockerCredential')
@@ -13,7 +13,7 @@ pipeline {
     //GIT_CREDENTIALS = credentials('gitCredential')
     //REGION = 'ap-northeast-2'
   }
-
+*/
   stages {
     // 깃허브에 가서 소스코드 가져오기.
     stage('Git Clone') {
